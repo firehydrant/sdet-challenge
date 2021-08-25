@@ -1,0 +1,58 @@
+{
+  "name": "frontend-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.6",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@fontsource/open-sans": "^4.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "concurrently": "^6.2.0",
+    "date-fns": "^2.23.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^4",
+    "json-server": "^0.16.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-query": "^3.19.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "dev": "concurrently 'yarn server-start' 'yarn start'",
+    "server-start": "json-server db.json --port 3001",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress": "cypress run --browser chrome --spec 'cypress/integration/*.js'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "^8.3.0"
+  }
+}
